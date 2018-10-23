@@ -1,0 +1,22 @@
+php:
+  build: .
+  container_name: yawik.php
+  dockerfile: Dockerfile
+  ports:
+    - "8080:80"
+  volumes:
+    - ./var/docker/log:/var/www/log
+    - ./var/docker/cache:/var/www/cache
+    - .:/var/www
+
+mongo:
+  image: mongo:3.4.10
+  container_name: standard.mongo
+  environment:
+    - MONGO_DATA_DIR=/data/db
+    - MONGO_LOG_DIR=/dev/null
+  volumes:
+    - ./var/mongo:/data/db
+  ports:
+    - "27017:27017"
+  command: mongod --smallfiles --logpath=/dev/null # --quiet
