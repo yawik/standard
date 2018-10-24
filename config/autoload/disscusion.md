@@ -13,11 +13,15 @@ And try fresh yawik installation:
 ```sh
 $ composer create-project yawik/standard path/to/fresh
 
+# install additional module
+$ composer install yawik/orders ^0.32@dev
+
+# testing fresh yawik
 $ cd path/to/fresh
 $ php -S localhost:8000 -t public/
 
-# install additional module
-$ composer install yawik/orders ^0.32@dev
+# or if you prefer docker-compose
+$ docker-compose up --build
 ```
 
 How can an existing YAWIK instance be updated to the new structure?

@@ -35,7 +35,11 @@
             "ext-mongo": "1.6.16"
         }
     },
-    "extra": [],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.32-dev"
+        }
+    },
     "scripts": {
         "auto-scripts": [
             "@install-assets",
