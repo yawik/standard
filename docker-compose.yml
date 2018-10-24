@@ -5,9 +5,9 @@ php:
   ports:
     - "8080:80"
   volumes:
-    - ./var/docker/log:/var/www/log
-    - ./var/docker/cache:/var/www/cache
     - .:/var/www
+    - ./var/docker/log:/var/www/var/log
+    - ./var/docker/cache:/var/www/var/cache
 
 mongo:
   image: mongo:3.4.10
