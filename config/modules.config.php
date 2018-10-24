@@ -22,5 +22,6 @@ return Bootstrap::generateModuleConfiguration([
     'Cv',
     'Auth',
     'Applications',
-    'YawikDemoSkin'
+    'YawikDemoSkin',
+    'Demo'
 ]);

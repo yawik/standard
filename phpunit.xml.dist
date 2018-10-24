@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit colors="true">
+    <filter>
+        <whitelist>
+            <directory>./module/Demo/src</directory>
+        </whitelist>
+    </filter>
     <testsuites>
-        <testsuite name="ZendSkeletonApplication Test Suite">
-            <directory>./module/Application/test</directory>
+        <testsuite name="Demo">
+            <directory>./module/Demo/test</directory>
         </testsuite>
     </testsuites>
 </phpunit>

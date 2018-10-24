@@ -17,16 +17,17 @@
         "zendframework/zend-mvc": "^3.0.1",
         "zfcampus/zf-development-mode": "^3.0",
         "yawik/core": "^0.32@dev",
-        "yawik/demo-skin": "^0.32@dev"
+        "yawik/demo-skin": "^0.32@dev",
+        "yawik/behat": "^0.32@dev"
     },
     "autoload": {
         "psr-4": {
-            "Application\\": "module/Application/src/"
+            "Demo\\": "module/Demo/src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ApplicationTest\\": "module/Application/test/"
+            "DemoTest\\": "module/Demo/test/"
         }
     },
     "config": {
@@ -47,5 +48,8 @@
         ],
         "serve": "php -S 0.0.0.0:8080 -t public public/index.php",
         "test": "phpunit"
+    },
+    "require-dev": {
+        "zendframework/zend-test": "^3.2"
     }
 }
