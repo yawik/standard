@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb7a3e6442d26e9d5c74a9bfb6c1a6d9",
+    "content-hash": "ced6c26a4c8361a0bdb61f02bed8d140",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -1790,6 +1790,63 @@
             "time": "2018-10-02T16:33:53+00:00"
         },
         {
+            "name": "symfony/dotenv",
+            "version": "v3.4.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/dotenv.git",
+                "reference": "fcc8c8c73899e65ec528aac439c49e7929cdb87b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/dotenv/zipball/fcc8c8c73899e65ec528aac439c49e7929cdb87b",
+                "reference": "fcc8c8c73899e65ec528aac439c49e7929cdb87b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9|>=7.0.8"
+            },
+            "require-dev": {
+                "symfony/process": "~3.2|~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Dotenv\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Registers environment variables from a .env file",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
+            "time": "2018-07-26T11:19:56+00:00"
+        },
+        {
             "name": "symfony/filesystem",
             "version": "v3.4.17",
             "source": {
@@ -2287,27 +2344,28 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/core.git",
-                "reference": "91f0d4266d02c745374f0d546999981f553843fd"
+                "reference": "840c5d423a7d2fb476baacb3eae96eeeca37367a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/core/zipball/91f0d4266d02c745374f0d546999981f553843fd",
-                "reference": "91f0d4266d02c745374f0d546999981f553843fd",
+                "url": "https://api.github.com/repos/yawik/core/zipball/840c5d423a7d2fb476baacb3eae96eeeca37367a",
+                "reference": "840c5d423a7d2fb476baacb3eae96eeeca37367a",
                 "shasum": ""
             },
             "require": {
                 "alcaeus/mongo-php-adapter": "^1.0.0",
-                "doctrine/common": "2.7.*",
                 "doctrine/doctrine-mongo-odm-module": "^1.0.0",
                 "ext-intl": "*",
                 "ext-mongodb": "*",
                 "hybridauth/hybridauth": "^2.10",
-                "imagine/imagine": "^1.0.0",
-                "mikemix/zf2htmlpurifier": "^1.0.0",
-                "mikey179/vfsstream": "^1.6.0",
+                "imagine/imagine": "^1.0",
+                "jmikola/geojson": "^1.0",
+                "mikemix/zf2htmlpurifier": "^1.0",
+                "mikey179/vfsstream": "^1.6",
                 "mpdf/mpdf": "5.7.*",
                 "php": "^5.6 | ^7.0 | ^7.1 | 7.2",
                 "symfony/console": "^3.4",
+                "symfony/dotenv": "^3.4",
                 "symfony/filesystem": "^3.4",
                 "symfony/finder": "^3.4",
                 "symfony/process": "^3.4",
@@ -2394,7 +2452,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2018-10-24T13:37:01+00:00"
+            "time": "2018-10-25T04:28:50+00:00"
         },
         {
             "name": "yawik/cv",
@@ -2402,12 +2460,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/cv.git",
-                "reference": "4076febf16c72f235dfc19906d64270c6b10ed02"
+                "reference": "b0b81748097dd5e2f5167102c9a53f15dea46961"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/cv/zipball/4076febf16c72f235dfc19906d64270c6b10ed02",
-                "reference": "4076febf16c72f235dfc19906d64270c6b10ed02",
+                "url": "https://api.github.com/repos/yawik/cv/zipball/b0b81748097dd5e2f5167102c9a53f15dea46961",
+                "reference": "b0b81748097dd5e2f5167102c9a53f15dea46961",
                 "shasum": ""
             },
             "require": {
@@ -2450,7 +2508,7 @@
                 "module",
                 "yawik"
             ],
-            "time": "2018-10-22T06:41:36+00:00"
+            "time": "2018-10-25T04:01:16+00:00"
         },
         {
             "name": "yawik/demo-skin",
@@ -2573,12 +2631,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/install.git",
-                "reference": "44b0a163e79cd80255581c03ab576fdc01f5f3bb"
+                "reference": "21e16029a271bf9070042e9ccbe09761625c6905"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/install/zipball/44b0a163e79cd80255581c03ab576fdc01f5f3bb",
-                "reference": "44b0a163e79cd80255581c03ab576fdc01f5f3bb",
+                "url": "https://api.github.com/repos/yawik/install/zipball/21e16029a271bf9070042e9ccbe09761625c6905",
+                "reference": "21e16029a271bf9070042e9ccbe09761625c6905",
                 "shasum": ""
             },
             "require": {
@@ -2622,7 +2680,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2018-10-24T14:10:32+00:00"
+            "time": "2018-10-25T04:01:16+00:00"
         },
         {
             "name": "yawik/jobs",

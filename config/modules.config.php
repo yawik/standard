@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @link      http://github.com/zendframework/ZendSkeletonApplication for the canonical source repository
  * @copyright Copyright (c) 2005-2016 Zend Technologies USA Inc. (http://www.zend.com)
@@ -10,9 +11,8 @@
  *
  * This should be an array of module namespaces used in the application.
  */
-use Core\Bootstrap;
 
-return Bootstrap::generateModuleConfiguration([
+return [
     'Core',
     'Settings',
     'Pdf',
@@ -22,6 +22,5 @@ return Bootstrap::generateModuleConfiguration([
     'Cv',
     'Auth',
     'Applications',
-    'YawikDemoSkin',
     'Demo'
-]);
+];
