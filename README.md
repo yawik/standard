@@ -1,5 +1,7 @@
 # Yawik Standard Application
 
+[![Build Status](https://travis-ci.org/yawik/standard.svg?branch=master)](https://travis-ci.org/yawik/standard)
+
 ## Introduction
 
 This is a skeleton application for Yawik.
