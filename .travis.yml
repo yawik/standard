@@ -36,7 +36,6 @@ before_install:
 install:
   # install php packages required for running YAWIK phpunit tests
   - pecl install -f ${PECLMONGO}
-  - phpenv config-add .travis/phpenv.ini
   - composer install
   - ./vendor/bin/yawik assets:install --relative
   - yarn install
