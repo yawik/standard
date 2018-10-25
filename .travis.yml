@@ -52,9 +52,9 @@ before_script:
 
 script:
   - 'if [[ $COVERAGE = yes ]]; then
-        ./vendor/bin/phpunit -c test --verbose --coverage-clover=build/logs/clover.xml --coverage-php=build/logs/clover.serialized;
+        ./vendor/bin/phpunit --verbose --coverage-clover=build/logs/clover.xml --coverage-php=build/logs/clover.serialized;
     else
-        ./vendor/bin/phpunit -c test --verbose;
+        ./vendor/bin/phpunit test --verbose;
     fi'
   # only run behat tests when not collecting coverage
   - if [[ $COVERAGE != yes ]]; then ./vendor/bin/behat --strict --no-interaction; fi
