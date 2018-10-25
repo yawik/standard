@@ -54,7 +54,7 @@ script:
   - 'if [[ $COVERAGE = yes ]]; then
         ./vendor/bin/phpunit --verbose --coverage-clover=build/logs/clover.xml --coverage-php=build/logs/clover.serialized;
     else
-        ./vendor/bin/phpunit test --verbose;
+        ./vendor/bin/phpunit --verbose;
     fi'
   # only run behat tests when not collecting coverage
   - if [[ $COVERAGE != yes ]]; then ./vendor/bin/behat --strict --no-interaction; fi
