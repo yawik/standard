@@ -60,8 +60,8 @@ script:
 
 after_failure:
   - "./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles \"build/behat/*.log\""
-  - "./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles \"log/*.log\""
-  - "./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles \"log/tracy/*.*\""
+  - "./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles \"var/log/*.log\""
+  - "./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles \"var/log/tracy/*.*\""
   - "IMGUR_CLIENT_ID=bec050c54e1bb52 ./vendor/bin/imgur-uploader build/behat/*.png"
 
 after_script:
