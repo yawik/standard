@@ -1,6 +1,5 @@
 <?php
 
-use Zend\Mvc\Application;
 use Zend\Stdlib\ArrayUtils;
 
 /**
@@ -21,7 +20,7 @@ if (php_sapi_name() === 'cli-server') {
 // Composer autoloading
 include __DIR__ . '/../vendor/autoload.php';
 
-if (! class_exists(Application::class)) {
+if (! class_exists(Core\Module::class)) {
     throw new RuntimeException(
         "Unable to load application.\n"
         . "- Type `composer install` if you are developing locally.\n"
@@ -37,4 +36,4 @@ if (file_exists(__DIR__ . '/../config/development.config.php')) {
 }
 
 // Run the application!
-Application::init($appConfig)->run();
+\Core\Yawik::runApplication();
