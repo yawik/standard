@@ -36,6 +36,7 @@ before_install:
 install:
   # install php packages required for running YAWIK phpunit tests
   - pecl install -f ${PECLMONGO}
+  - cp -v .travis/yawik.config.global.php config/autoload
   - composer install
 
 before_script:
