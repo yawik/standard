@@ -19,4 +19,11 @@ return [
     'view_manager' => [
         'display_exceptions' => true,
     ],
+    'doctrine' => [
+        'configuration' => [
+            'odm_default' => [
+                'default_db' => 'YAWIK_TEST'
+            ]
+        ]
+    ]
 ];

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ced6c26a4c8361a0bdb61f02bed8d140",
+    "content-hash": "b3f49200cd7a513443f74acca3736d53",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -70,6 +70,126 @@
                 "mongodb"
             ],
             "time": "2018-03-05T20:40:55+00:00"
+        },
+        {
+            "name": "composer/installers",
+            "version": "v1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/cfcca6b1b60bc4974324efb5783c13dca6932b5b",
+                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "^4.8.36"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Eliasis",
+                "Hurad",
+                "ImageCMS",
+                "Kanboard",
+                "Lan Management System",
+                "MODX Evo",
+                "Mautic",
+                "Maya",
+                "OXID",
+                "Plentymarkets",
+                "Porto",
+                "RadPHP",
+                "SMF",
+                "Thelia",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "attogram",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "cockpit",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "eZ Platform",
+                "elgg",
+                "expressionengine",
+                "fuelphp",
+                "grav",
+                "installer",
+                "itop",
+                "joomla",
+                "kohana",
+                "laravel",
+                "lavalite",
+                "lithium",
+                "magento",
+                "majima",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "modx",
+                "moodle",
+                "osclass",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "puppet",
+                "pxcms",
+                "reindex",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "sydes",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "yawik",
+                "zend",
+                "zikula"
+            ],
+            "time": "2018-08-27T06:10:37+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -2229,12 +2349,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/applications.git",
-                "reference": "7acb7473e543f5d78c987b6a837bceea1df58fbd"
+                "reference": "b84b5fcb0a77fd7905f1293bdaabca32dbf0b7c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/applications/zipball/7acb7473e543f5d78c987b6a837bceea1df58fbd",
-                "reference": "7acb7473e543f5d78c987b6a837bceea1df58fbd",
+                "url": "https://api.github.com/repos/yawik/applications/zipball/b84b5fcb0a77fd7905f1293bdaabca32dbf0b7c4",
+                "reference": "b84b5fcb0a77fd7905f1293bdaabca32dbf0b7c4",
                 "shasum": ""
             },
             "require": {
@@ -2278,7 +2398,7 @@
                 "yawik",
                 "zf"
             ],
-            "time": "2018-10-22T06:41:36+00:00"
+            "time": "2018-10-29T12:49:54+00:00"
         },
         {
             "name": "yawik/auth",
@@ -2344,12 +2464,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/core.git",
-                "reference": "02b72ecaffd23136e232613b7c55d4001d701959"
+                "reference": "be32f0db98b9a998e38e655f1d73946bb4bf4c95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/core/zipball/02b72ecaffd23136e232613b7c55d4001d701959",
-                "reference": "02b72ecaffd23136e232613b7c55d4001d701959",
+                "url": "https://api.github.com/repos/yawik/core/zipball/be32f0db98b9a998e38e655f1d73946bb4bf4c95",
+                "reference": "be32f0db98b9a998e38e655f1d73946bb4bf4c95",
                 "shasum": ""
             },
             "require": {
@@ -2452,7 +2572,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2018-10-25T05:49:54+00:00"
+            "time": "2018-10-31T15:36:55+00:00"
         },
         {
             "name": "yawik/cv",
@@ -2516,15 +2636,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/DemoSkin.git",
-                "reference": "6a3bf6b7d8aae6d53dbfaba521d7df9ecc547ca5"
+                "reference": "c37972ecc1b9866b81e387086881fd8cd6a6e5bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/DemoSkin/zipball/6a3bf6b7d8aae6d53dbfaba521d7df9ecc547ca5",
-                "reference": "6a3bf6b7d8aae6d53dbfaba521d7df9ecc547ca5",
+                "url": "https://api.github.com/repos/yawik/DemoSkin/zipball/c37972ecc1b9866b81e387086881fd8cd6a6e5bc",
+                "reference": "c37972ecc1b9866b81e387086881fd8cd6a6e5bc",
                 "shasum": ""
             },
             "require": {
+                "composer/installers": "~1.0",
                 "yawik/core": "^0.32@dev"
             },
             "require-dev": {
@@ -2533,8 +2654,12 @@
             },
             "type": "yawik-module",
             "extra": {
+                "zf": {
+                    "module": "YawikDemoSkin"
+                },
                 "branch-alias": {
-                    "dev-develop": "0.32-dev"
+                    "dev-develop": "0.32-dev",
+                    "dev-master": "0.31-dev"
                 }
             },
             "autoload": {
@@ -2565,7 +2690,7 @@
                 "billing",
                 "yawik"
             ],
-            "time": "2018-10-23T13:05:51+00:00"
+            "time": "2018-10-31T16:40:34+00:00"
         },
         {
             "name": "yawik/geo",
@@ -2631,12 +2756,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/install.git",
-                "reference": "21e16029a271bf9070042e9ccbe09761625c6905"
+                "reference": "6f36ffb32125490c674fc56ba20d3a0e06a98705"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/install/zipball/21e16029a271bf9070042e9ccbe09761625c6905",
-                "reference": "21e16029a271bf9070042e9ccbe09761625c6905",
+                "url": "https://api.github.com/repos/yawik/install/zipball/6f36ffb32125490c674fc56ba20d3a0e06a98705",
+                "reference": "6f36ffb32125490c674fc56ba20d3a0e06a98705",
                 "shasum": ""
             },
             "require": {
@@ -2680,7 +2805,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2018-10-25T04:01:16+00:00"
+            "time": "2018-10-29T14:56:55+00:00"
         },
         {
             "name": "yawik/jobs",
@@ -2688,12 +2813,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/jobs.git",
-                "reference": "b7a1b07fab9a552a0fd61d430222f5848fcffe71"
+                "reference": "884fc3b7a3655429958366cb998fe7254528b145"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/jobs/zipball/b7a1b07fab9a552a0fd61d430222f5848fcffe71",
-                "reference": "b7a1b07fab9a552a0fd61d430222f5848fcffe71",
+                "url": "https://api.github.com/repos/yawik/jobs/zipball/884fc3b7a3655429958366cb998fe7254528b145",
+                "reference": "884fc3b7a3655429958366cb998fe7254528b145",
                 "shasum": ""
             },
             "require": {
@@ -2737,7 +2862,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2018-10-23T03:48:55+00:00"
+            "time": "2018-10-29T14:56:55+00:00"
         },
         {
             "name": "yawik/organizations",
@@ -8080,12 +8205,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/behat.git",
-                "reference": "a888e623f248002951398130ec28c1b575324c23"
+                "reference": "c7a9639ef36e850b41db55d48e54957976352a78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/behat/zipball/a888e623f248002951398130ec28c1b575324c23",
-                "reference": "a888e623f248002951398130ec28c1b575324c23",
+                "url": "https://api.github.com/repos/yawik/behat/zipball/c7a9639ef36e850b41db55d48e54957976352a78",
+                "reference": "c7a9639ef36e850b41db55d48e54957976352a78",
                 "shasum": ""
             },
             "require": {
@@ -8139,7 +8264,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2018-10-24T13:12:35+00:00"
+            "time": "2018-10-29T17:07:10+00:00"
         },
         {
             "name": "zendframework/zend-component-installer",
