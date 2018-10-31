@@ -23,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Demo\\": "module/Demo/src/"
+            "Demo\\": "src/Demo/src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DemoTest\\": "module/Demo/test/"
+            "DemoTest\\": "src/Demo/test/"
         }
     },
     "config": {
