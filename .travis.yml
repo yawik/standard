@@ -37,8 +37,7 @@ install:
   # install php packages required for running YAWIK phpunit tests
   - pecl install -f ${PECLMONGO}
   - composer install
-  - ./vendor/bin/yawik assets:install --relative
-  - yarn install
+  - ./vendor/bin/yawik assets-install --relative
 
 before_script:
   # behat preparation
