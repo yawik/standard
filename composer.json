@@ -47,6 +47,8 @@
     },
     "scripts": {
         "auto-scripts": [
+            "@install-assets",
+            "npm install"
         ],
         "install-assets": "./vendor/bin/yawik assets-install --relative",
         "post-create-project-cmd": [

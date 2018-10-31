@@ -48,9 +48,9 @@ before_script:
       sleep 3;
     fi'
   - mkdir -p build/behat
+  - chmod 777 build/behat
 
 script:
-  - ./vendor/bin/yawik assets-install --relative
   - 'if [[ $COVERAGE = yes ]]; then
         ./vendor/bin/phpunit --verbose --coverage-clover=build/logs/clover.xml --coverage-php=build/logs/clover.serialized;
     else
