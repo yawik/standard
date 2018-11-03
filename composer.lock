@@ -2349,12 +2349,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/applications.git",
-                "reference": "b84b5fcb0a77fd7905f1293bdaabca32dbf0b7c4"
+                "reference": "2242d8862541f3386ffa0e2c282abc8ecff21fa3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/applications/zipball/b84b5fcb0a77fd7905f1293bdaabca32dbf0b7c4",
-                "reference": "b84b5fcb0a77fd7905f1293bdaabca32dbf0b7c4",
+                "url": "https://api.github.com/repos/yawik/applications/zipball/2242d8862541f3386ffa0e2c282abc8ecff21fa3",
+                "reference": "2242d8862541f3386ffa0e2c282abc8ecff21fa3",
                 "shasum": ""
             },
             "require": {
@@ -2398,7 +2398,7 @@
                 "yawik",
                 "zf"
             ],
-            "time": "2018-10-29T12:49:54+00:00"
+            "time": "2018-11-02T02:28:09+00:00"
         },
         {
             "name": "yawik/auth",
@@ -2406,12 +2406,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/auth.git",
-                "reference": "49b5355b4e515785b55ae7f61ae386569322c290"
+                "reference": "bf49fbc9eba22eed7511668bc7b8bb824468790a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/auth/zipball/49b5355b4e515785b55ae7f61ae386569322c290",
-                "reference": "49b5355b4e515785b55ae7f61ae386569322c290",
+                "url": "https://api.github.com/repos/yawik/auth/zipball/bf49fbc9eba22eed7511668bc7b8bb824468790a",
+                "reference": "bf49fbc9eba22eed7511668bc7b8bb824468790a",
                 "shasum": ""
             },
             "require": {
@@ -2456,7 +2456,7 @@
                 "yawik",
                 "zf"
             ],
-            "time": "2018-10-24T03:53:44+00:00"
+            "time": "2018-11-02T02:28:09+00:00"
         },
         {
             "name": "yawik/core",
@@ -2464,12 +2464,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/core.git",
-                "reference": "be32f0db98b9a998e38e655f1d73946bb4bf4c95"
+                "reference": "b699362a5106c89195a0ff58886439dad907e099"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/core/zipball/be32f0db98b9a998e38e655f1d73946bb4bf4c95",
-                "reference": "be32f0db98b9a998e38e655f1d73946bb4bf4c95",
+                "url": "https://api.github.com/repos/yawik/core/zipball/b699362a5106c89195a0ff58886439dad907e099",
+                "reference": "b699362a5106c89195a0ff58886439dad907e099",
                 "shasum": ""
             },
             "require": {
@@ -2572,7 +2572,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2018-10-31T15:36:55+00:00"
+            "time": "2018-11-02T15:37:04+00:00"
         },
         {
             "name": "yawik/cv",
@@ -2580,12 +2580,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/cv.git",
-                "reference": "b0b81748097dd5e2f5167102c9a53f15dea46961"
+                "reference": "ff048f7000268503caf2cfc8b74f291d5783a48e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/cv/zipball/b0b81748097dd5e2f5167102c9a53f15dea46961",
-                "reference": "b0b81748097dd5e2f5167102c9a53f15dea46961",
+                "url": "https://api.github.com/repos/yawik/cv/zipball/ff048f7000268503caf2cfc8b74f291d5783a48e",
+                "reference": "ff048f7000268503caf2cfc8b74f291d5783a48e",
                 "shasum": ""
             },
             "require": {
@@ -2628,7 +2628,7 @@
                 "module",
                 "yawik"
             ],
-            "time": "2018-10-25T04:01:16+00:00"
+            "time": "2018-11-02T02:28:09+00:00"
         },
         {
             "name": "yawik/demo-skin",
@@ -2698,12 +2698,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/geo.git",
-                "reference": "f86539742ee1b512f9bdb36122e321352c1d545f"
+                "reference": "3669ccf426e84291a95cbd60c5be482c7a7f10c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/geo/zipball/f86539742ee1b512f9bdb36122e321352c1d545f",
-                "reference": "f86539742ee1b512f9bdb36122e321352c1d545f",
+                "url": "https://api.github.com/repos/yawik/geo/zipball/3669ccf426e84291a95cbd60c5be482c7a7f10c9",
+                "reference": "3669ccf426e84291a95cbd60c5be482c7a7f10c9",
                 "shasum": ""
             },
             "require": {
@@ -2748,7 +2748,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2018-10-24T03:57:51+00:00"
+            "time": "2018-11-02T02:28:09+00:00"
         },
         {
             "name": "yawik/install",
@@ -2813,12 +2813,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/jobs.git",
-                "reference": "884fc3b7a3655429958366cb998fe7254528b145"
+                "reference": "dcd4fde240ac95d85b9e4a218a514a8f62b42895"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/jobs/zipball/884fc3b7a3655429958366cb998fe7254528b145",
-                "reference": "884fc3b7a3655429958366cb998fe7254528b145",
+                "url": "https://api.github.com/repos/yawik/jobs/zipball/dcd4fde240ac95d85b9e4a218a514a8f62b42895",
+                "reference": "dcd4fde240ac95d85b9e4a218a514a8f62b42895",
                 "shasum": ""
             },
             "require": {
@@ -2862,7 +2862,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2018-10-29T14:56:55+00:00"
+            "time": "2018-11-02T02:28:09+00:00"
         },
         {
             "name": "yawik/organizations",
