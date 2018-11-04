@@ -6,5 +6,5 @@ module.exports = function(grunt) {
     });
 
     grunt.loadTasks('./public/modules/YawikDemoSkin');
-    grunt.registerTask('default',['yawik:demo']);
+    grunt.registerTask('default',['less:core','cssmin:core','yawik:demo']);
 };

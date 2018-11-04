@@ -2464,12 +2464,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/core.git",
-                "reference": "b699362a5106c89195a0ff58886439dad907e099"
+                "reference": "e56b8dba2120afc886b42c0a0f5e88a95a5da24d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/core/zipball/b699362a5106c89195a0ff58886439dad907e099",
-                "reference": "b699362a5106c89195a0ff58886439dad907e099",
+                "url": "https://api.github.com/repos/yawik/core/zipball/e56b8dba2120afc886b42c0a0f5e88a95a5da24d",
+                "reference": "e56b8dba2120afc886b42c0a0f5e88a95a5da24d",
                 "shasum": ""
             },
             "require": {
@@ -2572,7 +2572,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2018-11-02T15:37:04+00:00"
+            "time": "2018-11-03T04:52:38+00:00"
         },
         {
             "name": "yawik/cv",
