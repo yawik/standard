@@ -9,14 +9,16 @@
 
 $modules = require __DIR__.'/modules.config.php';
 
-if (!file_exists(__DIR__ . '/autoload/yawik.config.global.php')) {
+// do not inject install when we are in console command
+$isCli = php_sapi_name() === 'cli';
+if (!file_exists(__DIR__ . '/autoload/yawik.config.global.php') && !$isCli) {
     $modules = [
         'Install',
         'Core',
         'Auth',
         'Jobs',
     ];
-}else{
+} else {
     foreach (glob(__DIR__ . '/autoload/*.module.php') as $moduleFile) {
         $addModules = require $moduleFile;
         foreach ($addModules as $addModule) {

@@ -2464,12 +2464,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/core.git",
-                "reference": "b699362a5106c89195a0ff58886439dad907e099"
+                "reference": "e56b8dba2120afc886b42c0a0f5e88a95a5da24d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/core/zipball/b699362a5106c89195a0ff58886439dad907e099",
-                "reference": "b699362a5106c89195a0ff58886439dad907e099",
+                "url": "https://api.github.com/repos/yawik/core/zipball/e56b8dba2120afc886b42c0a0f5e88a95a5da24d",
+                "reference": "e56b8dba2120afc886b42c0a0f5e88a95a5da24d",
                 "shasum": ""
             },
             "require": {
@@ -2572,7 +2572,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2018-11-02T15:37:04+00:00"
+            "time": "2018-11-03T04:52:38+00:00"
         },
         {
             "name": "yawik/cv",
@@ -2636,12 +2636,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/DemoSkin.git",
-                "reference": "c37972ecc1b9866b81e387086881fd8cd6a6e5bc"
+                "reference": "82bbb51c411109c4452d4b0e7d667c1f56f44b66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/DemoSkin/zipball/c37972ecc1b9866b81e387086881fd8cd6a6e5bc",
-                "reference": "c37972ecc1b9866b81e387086881fd8cd6a6e5bc",
+                "url": "https://api.github.com/repos/yawik/DemoSkin/zipball/82bbb51c411109c4452d4b0e7d667c1f56f44b66",
+                "reference": "82bbb51c411109c4452d4b0e7d667c1f56f44b66",
                 "shasum": ""
             },
             "require": {
@@ -2690,7 +2690,7 @@
                 "billing",
                 "yawik"
             ],
-            "time": "2018-10-31T16:40:34+00:00"
+            "time": "2018-11-04T13:32:09+00:00"
         },
         {
             "name": "yawik/geo",

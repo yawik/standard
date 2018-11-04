@@ -50,6 +50,13 @@ before_script:
   - mkdir -p build/behat
   - chmod 777 build/behat
 
+after_failure:
+- cd $TRAVIS_BUILD_DIR
+- "./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles \"build/behat/*.log\""
+- "./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles \"log/*.log\""
+- "./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles \"log/tracy/*.*\""
+- "IMGUR_CLIENT_ID=bec050c54e1bb52 ./bin/imgur-uploader build/behat/*.png"
+
 script:
   - ./vendor/bin/phpunit
   - ./vendor/bin/behat
