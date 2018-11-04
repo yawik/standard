@@ -44,7 +44,7 @@ before_script:
   - 'if [[ $COVERAGE != yes ]]; then
       ./vendor/bin/start-selenium > /dev/null 2>&1 &
       sleep 5;
-      php -S localhost:8080 > /dev/null 2>&1 &
+      php -S localhost:8080 -t public > /dev/null 2>&1 &
       sleep 3;
     fi'
   - mkdir -p build/behat
