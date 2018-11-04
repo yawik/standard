@@ -52,9 +52,6 @@
         ],
         "install-assets": "./vendor/bin/yawik assets-install --relative",
         "serve": "php -S localhost:8080 -t public/",
-        "post-create-project-cmd": [
-            "@auto-scripts"
-        ],
         "post-install-cmd": [
             "@auto-scripts"
         ],

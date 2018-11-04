@@ -36,39 +36,27 @@ before_install:
 install:
   # install php packages required for running YAWIK phpunit tests
   - pecl install -f ${PECLMONGO}
+  - cp -v .travis/yawik.config.global.php config/autoload
   - composer install
-  - ./vendor/bin/yawik assets:install --relative
-  - yarn install
 
 before_script:
   # behat preparation
   - 'if [[ $COVERAGE != yes ]]; then
-      composer run start-selenium --timeout=0 > /dev/null 2>&1 &
+      ./vendor/bin/start-selenium > /dev/null 2>&1 &
       sleep 5;
-      composer run serve --timeout=0 > /dev/null 2>&1 &
+      php -S localhost:8080 -t public > /dev/null 2>&1 &
       sleep 3;
     fi'
   - mkdir -p build/behat
-
-script:
-  - 'if [[ $COVERAGE = yes ]]; then
-        ./vendor/bin/phpunit --verbose --coverage-clover=build/logs/clover.xml --coverage-php=build/logs/clover.serialized;
-    else
-        ./vendor/bin/phpunit --verbose;
-    fi'
-  # only run behat tests when not collecting coverage
-  - if [[ $COVERAGE != yes ]]; then ./vendor/bin/behat --strict --no-interaction; fi
+  - chmod 777 build/behat
 
 after_failure:
-  - "./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles \"build/behat/*.log\""
-  - "./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles \"log/*.log\""
-  - "./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles \"log/tracy/*.*\""
-  - "IMGUR_CLIENT_ID=bec050c54e1bb52 ./vendor/bin/imgur-uploader build/behat/*.png"
+- cd $TRAVIS_BUILD_DIR
+- "./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles \"build/behat/*.log\""
+- "./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles \"log/*.log\""
+- "./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles \"log/tracy/*.*\""
+- "IMGUR_CLIENT_ID=bec050c54e1bb52 ./bin/imgur-uploader build/behat/*.png"
 
-after_script:
-  - 'if [[ $COVERAGE = yes ]]; then
-        composer require php-coveralls/php-coveralls;
-        travis_retry ./vendor/bin/php-coveralls -vvv;
-        wget https://scrutinizer-ci.com/ocular.phar;
-        travis_retry php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.serialized;
-    fi'
+script:
+  - ./vendor/bin/phpunit
+  - ./vendor/bin/behat

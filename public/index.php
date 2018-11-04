@@ -31,8 +31,9 @@ if (! class_exists(Core\Module::class)) {
 
 // Retrieve configuration
 $appConfig = require __DIR__ . '/../config/config.php';
-if (file_exists(__DIR__ . '/../config/development.config.php')) {
-    $appConfig = ArrayUtils::merge($appConfig, require __DIR__ . '/../config/development.config.php');
+$env = getenv('APPLICATION_ENV');
+if (file_exists($file = __DIR__ . '/../config/'.$env.'.config.php')) {
+    $appConfig = ArrayUtils::merge($appConfig, require $file);
 }
 
 // Run the application!

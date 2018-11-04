@@ -17,7 +17,7 @@ default:
         Behat\MinkExtension:
             # change this base url value to match
             # your local development server url:
-            base_url: "http://localhost:8000"
+            base_url: "http://localhost:8080"
             javascript_session: chrome
             sessions:
                 chrome:
