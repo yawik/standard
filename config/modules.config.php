@@ -23,5 +23,5 @@ return [
     'Auth',
     'Applications',
     'YawikDemoSkin',
-    'Demo'
+    'Demo',
 ];

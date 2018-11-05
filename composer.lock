@@ -2406,12 +2406,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/auth.git",
-                "reference": "bf49fbc9eba22eed7511668bc7b8bb824468790a"
+                "reference": "6eb557b60ab97b2206da6c48bc62c4e84888ec00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/auth/zipball/bf49fbc9eba22eed7511668bc7b8bb824468790a",
-                "reference": "bf49fbc9eba22eed7511668bc7b8bb824468790a",
+                "url": "https://api.github.com/repos/yawik/auth/zipball/6eb557b60ab97b2206da6c48bc62c4e84888ec00",
+                "reference": "6eb557b60ab97b2206da6c48bc62c4e84888ec00",
                 "shasum": ""
             },
             "require": {
@@ -2456,7 +2456,7 @@
                 "yawik",
                 "zf"
             ],
-            "time": "2018-11-02T02:28:09+00:00"
+            "time": "2018-11-04T14:30:11+00:00"
         },
         {
             "name": "yawik/core",
@@ -2464,12 +2464,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/core.git",
-                "reference": "e56b8dba2120afc886b42c0a0f5e88a95a5da24d"
+                "reference": "7f7093decc25122c927e81ebd19ad9885965537b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/core/zipball/e56b8dba2120afc886b42c0a0f5e88a95a5da24d",
-                "reference": "e56b8dba2120afc886b42c0a0f5e88a95a5da24d",
+                "url": "https://api.github.com/repos/yawik/core/zipball/7f7093decc25122c927e81ebd19ad9885965537b",
+                "reference": "7f7093decc25122c927e81ebd19ad9885965537b",
                 "shasum": ""
             },
             "require": {
@@ -2572,7 +2572,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2018-11-03T04:52:38+00:00"
+            "time": "2018-11-04T14:30:11+00:00"
         },
         {
             "name": "yawik/cv",
@@ -2636,12 +2636,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/DemoSkin.git",
-                "reference": "82bbb51c411109c4452d4b0e7d667c1f56f44b66"
+                "reference": "71ce2d4b5959eade0f8193da13d8f4b173fd70d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/DemoSkin/zipball/82bbb51c411109c4452d4b0e7d667c1f56f44b66",
-                "reference": "82bbb51c411109c4452d4b0e7d667c1f56f44b66",
+                "url": "https://api.github.com/repos/yawik/DemoSkin/zipball/71ce2d4b5959eade0f8193da13d8f4b173fd70d9",
+                "reference": "71ce2d4b5959eade0f8193da13d8f4b173fd70d9",
                 "shasum": ""
             },
             "require": {
@@ -2690,7 +2690,7 @@
                 "billing",
                 "yawik"
             ],
-            "time": "2018-11-04T13:32:09+00:00"
+            "time": "2018-11-05T11:46:24+00:00"
         },
         {
             "name": "yawik/geo",
@@ -2756,12 +2756,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/install.git",
-                "reference": "6f36ffb32125490c674fc56ba20d3a0e06a98705"
+                "reference": "9b6ee06dda43be5cd1d253bace0e48035eefa790"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/install/zipball/6f36ffb32125490c674fc56ba20d3a0e06a98705",
-                "reference": "6f36ffb32125490c674fc56ba20d3a0e06a98705",
+                "url": "https://api.github.com/repos/yawik/install/zipball/9b6ee06dda43be5cd1d253bace0e48035eefa790",
+                "reference": "9b6ee06dda43be5cd1d253bace0e48035eefa790",
                 "shasum": ""
             },
             "require": {
@@ -2771,9 +2771,6 @@
             "extra": {
                 "branch-alias": {
                     "dev-develop": "0.32-dev"
-                },
-                "zf": {
-                    "module": "Install"
                 }
             },
             "autoload": {
@@ -2805,7 +2802,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2018-10-29T14:56:55+00:00"
+            "time": "2018-11-05T13:47:20+00:00"
         },
         {
             "name": "yawik/jobs",
