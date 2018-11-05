@@ -1,5 +1,5 @@
 {
-  "name": "yawik-demo-skin",
+  "name": "yawik-standard",
   "version": "0.32.0",
   "scripts": {
     "postinstall": "grunt"
