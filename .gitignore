@@ -10,3 +10,4 @@ cache
 behat.yml
 build
 modules
+node_modules
