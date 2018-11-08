@@ -47,9 +47,11 @@
     },
     "scripts": {
         "auto-scripts": [
+            "@clear-cache",
             "@install-assets",
             "npm install"
         ],
+        "clear-cache": "./vendor/bin/yawik clear-cache",
         "install-assets": "./vendor/bin/yawik assets-install --relative",
         "serve": "php -S localhost:8080 -t public/",
         "post-install-cmd": [
