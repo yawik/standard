@@ -1,2 +1,2 @@
-*.php
-!global.docker.php
+*local.php
+yawik.config.global.php
