@@ -7,9 +7,19 @@
  * file that was distributed with this source code.
  */
 
-// docker environment override
+$cacheDir = realpath(__DIR__.'/..').'/var/cache/docker';
+
+// override cache directories in docker environment
 return [
     'module_listener_options' => [
         'cache_dir' => realpath(dirname(__DIR__)).'/var/cache/docker'
+    ],
+    'doctrine' => [
+        'configuration' => [
+            'odm_default' => [
+                'hydrator_dir' => $cacheDir.'/Doctrine/Hydrator',
+                'proxy_dir' => $cacheDir.'/Doctrine/Proxy',
+            ]
+        ]
     ]
 ];
