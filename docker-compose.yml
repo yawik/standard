@@ -1,22 +1,37 @@
-php:
-  build: .
-  container_name: yawik.php
-  dockerfile: Dockerfile
-  ports:
-    - "8080:80"
-  volumes:
-    - .:/var/www
-    - ./var/docker/log:/var/www/var/log
-    - ./var/docker/cache:/var/www/var/cache
+version: "3"
+services:
 
-mongo:
-  image: mongo:3.4.10
-  container_name: standard.mongo
-  environment:
+  nginx:
+    image: nginx:alpine
+    container_name: ${DOCKER_APP_NAME}.nginx
+    volumes:
+    - ./etc/docker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+    - ./:/var/www/yawik
+    ports:
+    - "8080:80"
+    links:
+    - php
+    - mongo
+    environment:
+    - UMASK=0
+
+  php:
+    container_name: ${DOCKER_APP_NAME}.php
+    build:
+      context: ./etc/docker/php
+      args:
+        TIMEZONE: ${TIMEZONE}
+    volumes:
+    - ./:/var/www/yawik
+
+  mongo:
+    image: mongo:3.4.10
+    container_name: ${DOCKER_APP_NAME}.mongo
+    environment:
     - MONGO_DATA_DIR=/data/db
     - MONGO_LOG_DIR=/dev/null
-  volumes:
-    - ./var/mongo:/data/db
-  ports:
+    volumes:
+    - ./etc/docker/mongodb/data:/data/db
+    ports:
     - "27017:27017"
-  command: mongod --smallfiles --logpath=/dev/null # --quiet
+    command: mongod --smallfiles --logpath=/dev/null # --quiet

@@ -1,3 +1,1 @@
-local.php
-*.local.php
-yawik.config.global.php
+*.php

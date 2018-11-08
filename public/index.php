@@ -8,14 +8,7 @@ use Zend\Stdlib\ArrayUtils;
  */
 chdir(dirname(__DIR__));
 
-// Decline static file requests back to the PHP built-in webserver
-if (php_sapi_name() === 'cli-server') {
-    $path = realpath(__DIR__ . parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
-    if (__FILE__ !== $path && is_file($path)) {
-        return false;
-    }
-    unset($path);
-}
+
 
 // Composer autoloading
 include __DIR__ . '/../vendor/autoload.php';
@@ -29,12 +22,6 @@ if (! class_exists(Core\Module::class)) {
     );
 }
 
-// Retrieve configuration
-$appConfig = require __DIR__ . '/../config/config.php';
-$env = getenv('APPLICATION_ENV');
-if (file_exists($file = __DIR__ . '/../config/'.$env.'.config.php')) {
-    $appConfig = ArrayUtils::merge($appConfig, require $file);
-}
-
+umask(0000);
 // Run the application!
-\Core\Yawik::runApplication();
+\Core\Application::init()->run();

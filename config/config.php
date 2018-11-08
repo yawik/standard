@@ -9,38 +9,7 @@
 
 $modules = require __DIR__.'/modules.config.php';
 
-// do not inject install when we are in console command
-$isCli = php_sapi_name() === 'cli';
-if (!file_exists(__DIR__ . '/autoload/yawik.config.global.php') && !$isCli) {
-    $modules = [
-        'Install',
-        'Core',
-        'Auth',
-        'Jobs',
-    ];
-} else {
-    foreach (glob(__DIR__ . '/autoload/*.module.php') as $moduleFile) {
-        $addModules = require $moduleFile;
-        foreach ($addModules as $addModule) {
-            if (strpos($addModule, '-') === 0) {
-                $remove = substr($addModule, 1);
-                $modules = array_filter($modules, function ($elem) use ($remove) {
-                    return strcasecmp($elem, $remove);
-                });
-            } else {
-                if (!in_array($addModule, $modules)) {
-                    $modules[] = $addModule;
-                }
-            }
-        }
-    }
-}
-
-$env = getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV'):'development';
-
-$modules = \Core\Yawik::generateModuleConfiguration($modules);
-
-return [
+$config =  [
     // Retrieve list of modules used in this application.
     'modules' => $modules,
 
@@ -51,7 +20,7 @@ return [
         // namespace, the value of that key the specific path to that module's
         // Module class.
         'module_paths' => [
-            './module',
+            './modules',
             './vendor',
         ],
 
@@ -65,15 +34,17 @@ return [
         // Whether or not to enable a configuration cache.
         // If enabled, the merged configuration will be cached and used in
         // subsequent requests.
-        'config_cache_enabled' => ($env === 'production'),
+        // @TODO: uncomment this when force disabled when in install mode feature exists in Core\Application
+        //'config_cache_enabled' => ($env === 'production'),
 
         // The key used to create the configuration cache file name.
-        'config_cache_key' => $env,
+        'config_cache_key' => 'production',
 
         // Whether or not to enable a module class map cache.
         // If enabled, creates a module class map cache which will be used
         // by in future requests, to reduce the autoloading process.
-        'module_map_cache_enabled' => ($env === 'production'),
+        // @TODO: uncomment this when force disabled when in install mode feature exists in Core\Application
+        //'module_map_cache_enabled' => ($env === 'production'),
 
         // The key used to create the class map cache file name.
         'module_map_cache_key' => 'application.module.cache',
@@ -101,3 +72,9 @@ return [
     // Should be compatible with Zend\ServiceManager\Config.
     // 'service_manager' => [],
 ];
+
+if (getenv('DOCKER_ENV')=='yes') {
+    $config = \Zend\Stdlib\ArrayUtils::merge($config, include __DIR__.'/docker.php');
+}
+
+return $config;
