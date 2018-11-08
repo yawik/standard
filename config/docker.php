@@ -12,7 +12,7 @@ $cacheDir = realpath(__DIR__.'/..').'/var/cache/docker';
 // override cache directories in docker environment
 return [
     'module_listener_options' => [
-        'cache_dir' => realpath(dirname(__DIR__)).'/var/cache/docker'
+        'cache_dir' => $cacheDir.'/var/cache/docker'
     ],
     'doctrine' => [
         'configuration' => [
