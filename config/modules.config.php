@@ -21,5 +21,5 @@ return [
     'Pdf',
     'Geo',
     'Organizations',
-    'Demo',
+    'YawikDemoSkin',
 ];
