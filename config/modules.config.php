@@ -11,17 +11,15 @@
  *
  * This should be an array of module namespaces used in the application.
  */
-
 return [
     'Core',
+    'Auth',
+    'Cv',
+    'Applications',
+    'Jobs',
     'Settings',
     'Pdf',
-    'Organizations',
-    'Jobs',
     'Geo',
-    'Cv',
-    'Auth',
-    'Applications',
-    'YawikDemoSkin',
+    'Organizations',
     'Demo',
 ];
