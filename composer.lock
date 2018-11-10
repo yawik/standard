@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "78da1492468508db6a095fd07dc63274",
+    "content-hash": "6318b07a28608eaee33e6f80bfe69f03",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -2706,12 +2706,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/core.git",
-                "reference": "6019a7d61031056d662e5fd6f625ac664e70c105"
+                "reference": "75539aa464a2bcdc18fcad4f315e7669989151cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/core/zipball/6019a7d61031056d662e5fd6f625ac664e70c105",
-                "reference": "6019a7d61031056d662e5fd6f625ac664e70c105",
+                "url": "https://api.github.com/repos/yawik/core/zipball/75539aa464a2bcdc18fcad4f315e7669989151cf",
+                "reference": "75539aa464a2bcdc18fcad4f315e7669989151cf",
                 "shasum": ""
             },
             "require": {
@@ -2814,7 +2814,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2018-11-09T05:43:31+00:00"
+            "time": "2018-11-10T08:56:32+00:00"
         },
         {
             "name": "yawik/cv",
@@ -2878,16 +2878,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/DemoSkin.git",
-                "reference": "71ce2d4b5959eade0f8193da13d8f4b173fd70d9"
+                "reference": "5403ef62f6f472a4d40aca370f398c7b6c4ee290"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/DemoSkin/zipball/71ce2d4b5959eade0f8193da13d8f4b173fd70d9",
-                "reference": "71ce2d4b5959eade0f8193da13d8f4b173fd70d9",
+                "url": "https://api.github.com/repos/yawik/DemoSkin/zipball/5403ef62f6f472a4d40aca370f398c7b6c4ee290",
+                "reference": "5403ef62f6f472a4d40aca370f398c7b6c4ee290",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "~1.0",
                 "yawik/core": "^0.32@dev"
             },
             "require-dev": {
@@ -2900,8 +2899,7 @@
                     "module": "YawikDemoSkin"
                 },
                 "branch-alias": {
-                    "dev-develop": "0.32-dev",
-                    "dev-master": "0.31-dev"
+                    "dev-develop": "0.32-dev"
                 }
             },
             "autoload": {
@@ -2932,7 +2930,7 @@
                 "billing",
                 "yawik"
             ],
-            "time": "2018-11-05T11:46:24+00:00"
+            "time": "2018-11-10T10:59:08+00:00"
         },
         {
             "name": "yawik/geo",
@@ -3102,6 +3100,41 @@
                 "zf3"
             ],
             "time": "2018-11-02T02:28:09+00:00"
+        },
+        {
+            "name": "yawik/orders",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yawik/Orders.git",
+                "reference": "023600893ea3c037d4b2f59f6abff9dc6a1148f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yawik/Orders/zipball/023600893ea3c037d4b2f59f6abff9dc6a1148f9",
+                "reference": "023600893ea3c037d4b2f59f6abff9dc6a1148f9",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*"
+            },
+            "type": "yawik-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Carsten Bleek",
+                    "email": "bleek@cross-solution.de"
+                }
+            ],
+            "description": "This module adds a billing address to the job posting entering wizard .",
+            "keywords": [
+                "billing",
+                "yawik"
+            ],
+            "time": "2018-04-26T12:59:29+00:00"
         },
         {
             "name": "yawik/organizations",
@@ -3532,21 +3565,21 @@
         },
         {
             "name": "zendframework/zend-component-installer",
-            "version": "1.1.1",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-component-installer.git",
-                "reference": "5e9beda3b81d29d4d080b110d67f8c8c44d93605"
+                "reference": "788b74439fff056b848c47aeb3d8b63cf2fb2161"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-component-installer/zipball/5e9beda3b81d29d4d080b110d67f8c8c44d93605",
-                "reference": "5e9beda3b81d29d4d080b110d67f8c8c44d93605",
+                "url": "https://api.github.com/repos/zendframework/zend-component-installer/zipball/788b74439fff056b848c47aeb3d8b63cf2fb2161",
+                "reference": "788b74439fff056b848c47aeb3d8b63cf2fb2161",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0",
-                "php": "^5.6 || ^7.0"
+                "php": "^7.1"
             },
             "require-dev": {
                 "composer/composer": "^1.5.2",
@@ -3558,8 +3591,8 @@
             "type": "composer-plugin",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev",
-                    "dev-develop": "1.2-dev"
+                    "dev-master": "2.1.x-dev",
+                    "dev-develop": "2.2.x-dev"
                 },
                 "class": "Zend\\ComponentInstaller\\ComponentInstaller"
             },
@@ -3580,7 +3613,7 @@
                 "plugin",
                 "zf"
             ],
-            "time": "2018-01-11T15:03:06+00:00"
+            "time": "2018-03-21T16:53:56+00:00"
         },
         {
             "name": "zendframework/zend-config",
@@ -8654,12 +8687,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/behat.git",
-                "reference": "32922ce47c40f3104b7d22f41c534b7f1a263270"
+                "reference": "799c9464d5bffcb213ab97b8f31f0820ad6bb27f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/behat/zipball/32922ce47c40f3104b7d22f41c534b7f1a263270",
-                "reference": "32922ce47c40f3104b7d22f41c534b7f1a263270",
+                "url": "https://api.github.com/repos/yawik/behat/zipball/799c9464d5bffcb213ab97b8f31f0820ad6bb27f",
+                "reference": "799c9464d5bffcb213ab97b8f31f0820ad6bb27f",
                 "shasum": ""
             },
             "require": {
@@ -8713,7 +8746,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2018-11-09T04:06:25+00:00"
+            "time": "2018-11-10T08:56:32+00:00"
         },
         {
             "name": "zendframework/zend-dom",
@@ -8835,9 +8868,9 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "zendframework/zend-component-installer": 20,
         "yawik/core": 20,
         "yawik/demo-skin": 20,
+        "yawik/orders": 20,
         "yawik/behat": 20
     },
     "prefer-stable": true,

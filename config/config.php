@@ -73,8 +73,4 @@ $config =  [
     // 'service_manager' => [],
 ];
 
-if (getenv('DOCKER_ENV')=='yes') {
-    $config = \Zend\Stdlib\ArrayUtils::merge($config, include __DIR__.'/docker.php');
-}
-
 return $config;
