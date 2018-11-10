@@ -11,3 +11,4 @@ behat.yml
 build
 modules
 node_modules
+composer.lock
