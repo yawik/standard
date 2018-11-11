@@ -5,6 +5,6 @@ module.exports = function(grunt) {
         nodeModulesPath: __dirname + "/node_modules"
     });
 
-    grunt.loadTasks('./public/modules/YawikDemoSkin');
-    grunt.registerTask('default',['yawik:demo']);
+    grunt.loadTasks('./public/modules/Core');
+    grunt.registerTask('default',['yawik:core']);
 };

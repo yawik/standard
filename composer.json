@@ -13,9 +13,8 @@
     "prefer-stable": true,
     "require": {
         "php": "^5.6 || ^7.0 || ^7.1 || 7.2",
-        "zendframework/zend-component-installer": "^2.0",
+        "zendframework/zend-component-installer": "^1.1 | ^2.0",
         "yawik/core": ">=0.32@dev",
-        "yawik/demo-skin": ">=0.32@dev",
         "composer/installers": "^1.0",
         "yawik/orders": ">=0.32@dev"
     },
