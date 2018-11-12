@@ -12,30 +12,28 @@ cache:
       - "$HOME/.composer/cache"
       - "$HOME/.npm"
 
-env:
-  global:
-    - PECLMONGO="mongodb-stable"
-
 matrix:
   fast_finish: true
   include:
-    - php: '5.6'
-    - php: '7.0'
-    - php: '7.1'
-    - php: '7.2'
+  - php: '5.6'
+  - php: '7.0'
+  - php: '7.1'
+  - php: '7.2'
+  allow_failures:
+  - php: '7.3'
 
 services:
   - mongodb
 
 before_install:
-  - sudo apt-get update > /dev/null
+  - phpenv config-add ./etc/travis/yawik.ini
   - "mongo --eval 'db.runCommand({setParameter: 1, textSearchEnabled: true})' admin"
-  - if [[ $COVERAGE != yes ]]; then phpenv config-rm xdebug.ini; fi;
+  - if [[ $COVERAGE != yes ]]; then phpenv config-rm xdebug.ini || echo "xdebug not available"; fi;
   - pecl channel-update pecl.php.net
 
 install:
   # install php packages required for running YAWIK phpunit tests
-  - pecl install -f ${PECLMONGO}
+  - pecl install -f mongodb
   - cp -v etc/travis/yawik.config.global.php config/autoload
   - composer install
 
