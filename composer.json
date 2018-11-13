@@ -16,7 +16,7 @@
         "zendframework/zend-component-installer": "^1.1 | ^2.0",
         "yawik/core": ">=0.32@dev",
         "composer/installers": "^1.0",
-        "yawik/orders": ">=0.32@dev"
+        "yawik/composer-plugin": ">=0.32@dev"
     },
     "require-dev": {
         "zendframework/zend-test": "^3.2",
@@ -45,13 +45,25 @@
         "installer-types": ["yawik-module"],
         "installer-paths": {
             "modules/{$name}": ["type:yawik-module"]
+        },
+        "zf": {
+            "component-whitelist": [
+                "yawik/core",
+                "yawik/auth",
+                "yawik/cv",
+                "yawik/applications",
+                "yawik/jobs",
+                "yawik/settings",
+                "yawik/pdf",
+                "yawik/geo",
+                "yawik/organizations",
+                "zendframework/*"
+            ]
         }
     },
     "scripts": {
         "auto-scripts": [
-            "@cache-clear",
-            "@install-assets",
-            "npm install"
+            "@cache-clear"
         ],
         "cache-clear": "./vendor/bin/yawik clear-cache",
         "install-assets": "./vendor/bin/yawik assets-install --relative",
