@@ -37,6 +37,8 @@ install:
   - pecl install -f mongodb
   - cp -v etc/travis/yawik.config.global.php config/autoload
   - composer install
+  # @TODO remove this when auto-scripts is working again
+  - composer run post-install-cmd
 
 before_script:
   # behat preparation

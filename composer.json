@@ -48,6 +48,8 @@
         },
         "zf": {
             "component-whitelist": [
+                "DoctrineModule",
+                "DoctrineMongoODMModule",
                 "yawik/core",
                 "yawik/auth",
                 "yawik/cv",
@@ -56,14 +58,14 @@
                 "yawik/settings",
                 "yawik/pdf",
                 "yawik/geo",
-                "yawik/organizations",
-                "zendframework/*"
+                "yawik/organizations"
             ]
         }
     },
     "scripts": {
         "auto-scripts": [
-            "@cache-clear"
+            "@cache-clear",
+            "npm install"
         ],
         "cache-clear": "./vendor/bin/yawik clear-cache",
         "install-assets": "./vendor/bin/yawik assets-install --relative",
