@@ -1,11 +1,1 @@
-docker/*
-!docker/log/.gitkeep
-!docker/log/tracy/.gitkeep
-
-!docker/cache/.gitkeep
-!docker/cache/geo/.gitkeep
-
-cache/*
-!cache/.gitkeep
-
-mongo
+*
