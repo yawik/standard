@@ -27,6 +27,8 @@ return [
     'Zend\Router',
     'Zend\Paginator',
     'Zend\Validator',
+    'DoctrineModule',
+    'DoctrineMongoODMModule',
     'Core',
     'Auth',
     'Cv',
@@ -36,6 +38,4 @@ return [
     'Pdf',
     'Geo',
     'Organizations',
-    'DoctrineModule',
-    'DoctrineMongoODMModule',
 ];
