@@ -16,7 +16,6 @@
         "composer/installers": "^1.0",
         "yawik/composer-plugin": ">=0.32@dev",
         "yawik/core": ">=0.32@dev",
-        "yawik/orders": ">=0.32@dev",
         "zendframework/zend-component-installer": "^1.1 | ^2.0"
     },
     "require-dev": {
