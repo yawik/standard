@@ -9,6 +9,6 @@ log
 cache
 behat.yml
 build
-modules
+module
 node_modules
 composer.lock
