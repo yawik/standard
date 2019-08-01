@@ -12,14 +12,14 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^5.6 || ^7.0 || ^7.1 || 7.2",
+        "php": "^7.2",
         "composer/installers": "^1.0",
-        "yawik/application-pack": ">=0.33@dev",
+        "yawik/application-pack": "^1.1",
         "zendframework/zend-component-installer": "^1.1 | ^2.0"
     },
     "require-dev": {
         "zendframework/zend-test": "^3.2",
-        "yawik/behat": "0.32.x-dev"
+        "yawik/behat": "^0.33"
     },
     "autoload": {
         "psr-4": {

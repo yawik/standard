@@ -38,4 +38,5 @@ return [
     'Pdf',
     'Geo',
     'Organizations',
+    'SlmQueue',
 ];
