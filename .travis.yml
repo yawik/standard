@@ -1,11 +1,11 @@
 language: php
 
-addons:
-  apt:
-    sources:
-      - google-chrome
-    packages:
-      - google-chrome-stable
+#addons:
+#  apt:
+#    sources:
+#      - google-chrome
+#    packages:
+#      - google-chrome-stable
 
 cache:
     directories:
@@ -15,9 +15,6 @@ cache:
 matrix:
   fast_finish: true
   include:
-  - php: '5.6'
-  - php: '7.0'
-  - php: '7.1'
   - php: '7.2'
   - php: '7.3'
   allow_failures:
