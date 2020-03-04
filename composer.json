@@ -19,7 +19,7 @@
     },
     "require-dev": {
         "zendframework/zend-test": "^3.2",
-        "yawik/behat": "^0.33"
+        "yawik/behat": "^0.34"
     },
     "autoload": {
         "psr-4": {
