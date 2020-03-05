@@ -4,9 +4,9 @@
     "type": "project",
     "license": "MIT",
     "keywords": [
-        "framework",
+        "laminas",
         "mvc",
-        "zf"
+        "yawik"
     ],
     "homepage": "http://framework.zend.com/",
     "minimum-stability": "dev",
@@ -15,10 +15,10 @@
         "php": "^7.2",
         "composer/installers": "^1.0",
         "yawik/application-pack": "^1.1",
-        "zendframework/zend-component-installer": "^1.1 | ^2.0"
+        "laminas/laminas-component-installer": "^1.1 | ^2.0"
     },
     "require-dev": {
-        "zendframework/zend-test": "^3.2",
+        "laminas/laminas-test": "^3.2",
         "yawik/behat": "^0.34"
     },
     "autoload": {
@@ -65,7 +65,7 @@
         ],
         "cache-clear": "./vendor/bin/yawik clear-cache",
         "install-assets": "./vendor/bin/yawik assets-install --relative",
-        "serve": "php -S localhost:8080 -t public/",
+        "serve": "php -S o.o.o.o:8080 -t public/",
         "post-install-cmd": [
             "@auto-scripts"
         ],

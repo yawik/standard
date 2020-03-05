@@ -18,6 +18,13 @@ To create your new Yawik application:
 $ composer create-project -sdev yawik/standard path/to/install
 ```
 
+composer will ask you to remove the existing VCS. You should remove it and put add the code to 
+your own VCS.
+
+```bash
+Do you want to remove the existing VCS (.git, .svn..) history? [Y,n]? 
+```
+
 Once installed, you can test it out immediately using PHP's built-in web server:
 
 ```bash
@@ -28,8 +35,7 @@ $ composer run --timeout 0 serve
 This will start the cli-server on port 8080, and bind it to all network
 interfaces. You can then visit the site at http://localhost:8080/
 
-**Note:** The built-in CLI server is *for development only*.
-
+**Note:** The built-in CLI server is *for development only*. It listen on all interfaces.
 
 ## Using docker-compose
 
