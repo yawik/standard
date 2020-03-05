@@ -2,6 +2,12 @@
 
 [![Build Status](https://travis-ci.org/yawik/standard.svg?branch=master)](https://travis-ci.org/yawik/standard)
 
+## Requirements
+
+composer will execute [npm](https://github.com/yawik/standard/blob/master/composer.json#L64)
+
+[nodejs](https://nodejs.org/en/download/) is required.
+
 ## Introduction
 
 This is a skeleton application for Yawik.
