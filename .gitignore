@@ -12,5 +12,4 @@ behat.yml
 build
 module
 node_modules
-composer.lock
 public/dist
